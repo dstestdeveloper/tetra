@@ -15,13 +15,13 @@ const Intro: React.FC = () => {
       <Content>테트라 셀프코칭에서 지금 바로 자신을 찾아보아요!</Content>
       <Download>
         <IntroImage
-          src="/images/googleplay.png"
+          src="/images/googleplay_w.png"
           alt="googleplay"
           width={260}
           height={84}
         />
         <IntroImage
-          src="/images/appstore.png"
+          src="/images/appstore_w.png"
           alt="appstore"
           width={260}
           height={84}

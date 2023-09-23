@@ -5,7 +5,7 @@ const SelfCoaching: React.FC = () => {
   return (
     <SelfCoachingWrapper>
       <LeftContent>
-        <Start>start!</Start>
+        <PurpleTitle>start!</PurpleTitle>
         <Title>셀프코칭 시작하기</Title>
         <Content>
           나 자신이 정확히
@@ -20,7 +20,7 @@ const SelfCoaching: React.FC = () => {
       </LeftContent>
       <RightContent>
         <SelfCoachingImage
-          src={"/images/phone.png"}
+          src={"/images/selfCoachingPhone.png"}
           alt="phone"
           width={489}
           height={869}
@@ -30,7 +30,7 @@ const SelfCoaching: React.FC = () => {
   );
 };
 
-const Start = styled.div`
+const PurpleTitle = styled.div`
   font-weight: 700;
   font-size: 30px;
   color: #813ff2;

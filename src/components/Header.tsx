@@ -10,11 +10,11 @@ const Header: React.FC = () => {
       </LeftContent>
       <RightContent>
         <div>
-          <OsImage src={"/images/android_w.png"} alt="android" />
+          <OsImage src={"/images/android.png"} alt="android" />
           Android 앱 다운로드
         </div>
         <div>
-          <OsImage src={"/images/ios_w.png"} alt="ios" />
+          <OsImage src={"/images/ios.png"} alt="ios" />
           iOS 앱 다운로드
         </div>
       </RightContent>
