@@ -1,3 +1,4 @@
+import Community from "./components/Community";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Quiz from "./components/Quiz";
@@ -10,6 +11,7 @@ function App() {
   //TODO
   //모바일버전 남음
   //quiz부분 회색원 + 그 쪽 style문제
+  //커뮤니티부분 회색원 + 그 쪽 style문제
 
   return (
     <>
@@ -17,6 +19,7 @@ function App() {
       <Intro />
       <SelfCoaching />
       <Quiz />
+      <Community />
       <div style={{ height: "200px" }}></div>
     </>
   );
