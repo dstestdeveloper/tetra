@@ -14,6 +14,7 @@ function App() {
 
   //TODO
   //모바일버전 남음
+  //font적용
   //quiz부분 회색원 + 그 쪽 style문제
   //커뮤니티부분 회색원 + 그 쪽 style문제
   //강의부분 회색원 + 그 쪽 style문제

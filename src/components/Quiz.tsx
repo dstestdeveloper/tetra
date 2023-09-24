@@ -4,27 +4,31 @@ import styled from "styled-components";
 const Quiz: React.FC = () => {
   return (
     <QuizWrapper>
-      <QuizDescription>
-        <PurpleTitle>01</PurpleTitle>
-        <Title>Quiz</Title>
-        <Content>
-          테트라 이론에 대하여
-          <br />
-          공부하고 퀴즈를 풀어요!
-        </Content>
-      </QuizDescription>
-      <QuizImage
+      <QuizDescriptionContainer>
+        <QuizDescription>
+          <PurpleTitle>01</PurpleTitle>
+          <Title>Quiz</Title>
+          <Content>
+            테트라 이론에 대하여
+            <br />
+            공부하고 퀴즈를 풀어요!
+          </Content>
+        </QuizDescription>
+      </QuizDescriptionContainer>
+      <PhoneImage
         src={"/images/quizPhone.png"}
         alt="quizPhone"
         width={489}
         height={869}
       />
-      <QuizImage
-        src={"/images/graduationCap.png"}
-        alt="graduationCap"
-        width={595}
-        height={595}
-      />
+      <SideImageContainer>
+        <SideImage
+          src={"/images/graduationCap.png"}
+          alt="graduationCap"
+          width={595}
+          height={595}
+        />
+      </SideImageContainer>
       <GrayCircle />
     </QuizWrapper>
   );
@@ -52,6 +56,7 @@ const Content = styled.div`
   font-size: 36px;
   color: #1a1f27;
   margin-top: 6px;
+  line-height: 54px;
 `;
 
 const Title = styled.div`
@@ -66,9 +71,17 @@ const QuizDescription = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 435px;
+  font-family: "inter";
 `;
 
-const QuizImage = styled.img`
+const PhoneImage = styled.img`
+  object-fit: contain;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+const SideImage = styled.img`
   object-fit: contain;
   z-index: 1;
 `;
@@ -78,9 +91,21 @@ const QuizWrapper = styled.div`
   width: 100%;
   height: 967px;
   background-color: #ffffff;
-  display: inline-flex;
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-between;
   align-items: flex-end;
+`;
+
+const SideImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 1;
+`;
+
+const QuizDescriptionContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 1;
 `;
 
 export default Quiz;
