@@ -15,7 +15,6 @@ function App() {
   //모바일버전 남음
   //pc애니메이션 추가
   //font적용
-  //outro 원 추가해야함
 
   return (
     <>

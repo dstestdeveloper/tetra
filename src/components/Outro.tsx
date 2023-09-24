@@ -15,10 +15,10 @@ const Outro: React.FC = () => {
     <IntroWrapper>
       <Plus />
       <IntroImage
-        src={"/images/plus.png"}
+        src={"/images/plus2.png"}
         alt="plus"
-        width={280}
-        height={276}
+        width={488}
+        height={306}
       />
       <Title>테트라 셀프코칭</Title>
       <Content>테트라 셀프코칭에서 지금 바로 자신을 찾아보아요!</Content>
