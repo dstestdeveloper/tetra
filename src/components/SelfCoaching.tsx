@@ -11,7 +11,7 @@ const SelfCoaching: React.FC = () => {
           나 자신이 정확히
           <br /> 누군지 파악해볼까요?
         </Content>
-        <SelfCoachingImage
+        <MileStoneImage
           src={"/images/milestone.png"}
           alt="milestone"
           width={541}
@@ -19,12 +19,7 @@ const SelfCoaching: React.FC = () => {
         />
       </LeftContent>
       <RightContent>
-        <SelfCoachingImage
-          src={"/images/selfCoachingPhone.png"}
-          alt="phone"
-          width={489}
-          height={869}
-        />
+        <SelfCoachingImage src={"/images/selfCoachingPhone.png"} alt="phone" />
       </RightContent>
     </SelfCoachingWrapper>
   );
@@ -34,6 +29,11 @@ const PurpleTitle = styled.div`
   font-weight: 700;
   font-size: 30px;
   color: #813ff2;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    margin-top: 140px;
+  }
 `;
 
 const Content = styled.div`
@@ -41,6 +41,10 @@ const Content = styled.div`
   font-size: 36px;
   color: #1a1f27;
   margin-top: 27px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 const Title = styled.div`
@@ -48,6 +52,10 @@ const Title = styled.div`
   font-size: 50px;
   color: #1a1f27;
   margin-top: 13px;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
 `;
 
 const RightContent = styled.div``;
@@ -58,9 +66,27 @@ const LeftContent = styled.div`
   align-items: center;
 `;
 
+const MileStoneImage = styled.img`
+  object-fit: contain;
+  margin-top: 44px;
+  width: 541px;
+  height: 464px;
+  @media (max-width: 768px) {
+    width: 285px;
+    height: 209px;
+  }
+`;
+
 const SelfCoachingImage = styled.img`
   object-fit: contain;
   margin-top: 44px;
+  width: 489px;
+  height: 869px;
+  @media (max-width: 768px) {
+    width: 280px;
+    height: 500px;
+    margin-top: 0px;
+  }
 `;
 
 const SelfCoachingWrapper = styled.div`
@@ -70,6 +96,13 @@ const SelfCoachingWrapper = styled.div`
   justify-content: space-around;
   align-items: flex-end;
   background-color: #f9f9f9;
+
+  @media (max-width: 768px) {
+    height: 812px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export default SelfCoaching;
