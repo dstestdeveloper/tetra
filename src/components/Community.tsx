@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Community: React.FC = () => {
   return (
     <CommunityWrapper>
+      <GrayCircle />
       <SideImageContainer>
         <SideImage
           src={"/images/heart.png"}
@@ -32,6 +33,17 @@ const Community: React.FC = () => {
     </CommunityWrapper>
   );
 };
+
+const GrayCircle = styled.div`
+  position: absolute;
+  bottom: -30%;
+  right: 50%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 845px;
+  height: 845px;
+  z-index: 0;
+`;
 
 const PurpleTitle = styled.div`
   font-weight: 700;

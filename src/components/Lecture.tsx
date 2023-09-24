@@ -29,9 +29,21 @@ const Lecture: React.FC = () => {
           height={541}
         />
       </SideImageContainer>
+      <GrayCircle />
     </LectureWrapper>
   );
 };
+
+const GrayCircle = styled.div`
+  position: absolute;
+  bottom: -30%;
+  right: 10%;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  width: 845px;
+  height: 845px;
+  z-index: 0;
+`;
 
 const PurpleTitle = styled.div`
   font-weight: 700;

@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Consulting: React.FC = () => {
   return (
     <ConsultingWrapper>
+      <GrayCircle />
       <SideImageContainer>
         <SideImage
           src={"/images/coffee.png"}
@@ -33,6 +34,17 @@ const Consulting: React.FC = () => {
     </ConsultingWrapper>
   );
 };
+
+const GrayCircle = styled.div`
+  position: absolute;
+  bottom: -30%;
+  right: 50%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 845px;
+  height: 845px;
+  z-index: 0;
+`;
 
 const PurpleTitle = styled.div`
   font-weight: 700;
