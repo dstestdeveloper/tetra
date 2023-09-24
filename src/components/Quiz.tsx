@@ -71,7 +71,6 @@ const QuizDescription = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 435px;
-  font-family: "inter";
 `;
 
 const PhoneImage = styled.img`

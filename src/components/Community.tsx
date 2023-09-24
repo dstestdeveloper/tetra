@@ -4,27 +4,31 @@ import styled from "styled-components";
 const Community: React.FC = () => {
   return (
     <CommunityWrapper>
-      <CommunityImage
-        src={"/images/heart.png"}
-        alt="heart"
-        width={553}
-        height={553}
-      />
-      <CommunityImage
+      <SideImageContainer>
+        <SideImage
+          src={"/images/heart.png"}
+          alt="heart"
+          width={553}
+          height={553}
+        />
+      </SideImageContainer>
+      <PhoneImage
         src={"/images/quizPhone.png"}
         alt="quizPhone"
         width={489}
         height={869}
       />
-      <CommunityDescription>
-        <PurpleTitle>02</PurpleTitle>
-        <Title>테트라 커뮤니티</Title>
-        <Content>
-          테트라 커뮤니티를
-          <br />
-          이용하여 소통까지 해보아요!
-        </Content>
-      </CommunityDescription>
+      <CommunityDescriptionContainer>
+        <CommunityDescription>
+          <PurpleTitle>02</PurpleTitle>
+          <Title>테트라 커뮤니티</Title>
+          <Content>
+            테트라 커뮤니티를
+            <br />
+            이용하여 소통까지 해보아요!
+          </Content>
+        </CommunityDescription>
+      </CommunityDescriptionContainer>
     </CommunityWrapper>
   );
 };
@@ -40,6 +44,7 @@ const Content = styled.div`
   font-size: 36px;
   color: #1a1f27;
   margin-top: 6px;
+  line-height: 54px;
 `;
 
 const Title = styled.div`
@@ -56,7 +61,14 @@ const CommunityDescription = styled.div`
   margin-bottom: 435px;
 `;
 
-const CommunityImage = styled.img`
+const PhoneImage = styled.img`
+  object-fit: contain;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+const SideImage = styled.img`
   object-fit: contain;
   z-index: 1;
 `;
@@ -66,9 +78,21 @@ const CommunityWrapper = styled.div`
   width: 100%;
   height: 967px;
   background-color: #f9f9f9;
-  display: inline-flex;
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-between;
   align-items: flex-end;
+`;
+
+const SideImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 1;
+`;
+
+const CommunityDescriptionContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 1;
 `;
 
 export default Community;
