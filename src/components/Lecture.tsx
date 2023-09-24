@@ -4,27 +4,31 @@ import styled from "styled-components";
 const Lecture: React.FC = () => {
   return (
     <LectureWrapper>
-      <LectureDescription>
-        <PurpleTitle>03</PurpleTitle>
-        <Title>테트라 강의</Title>
-        <Content>
-          테트라에 대해
-          <br />
-          전문적으로 공부해 보아요!
-        </Content>
-      </LectureDescription>
-      <LectureImage
+      <LectureDescriptionContainer>
+        <LectureDescription>
+          <PurpleTitle>03</PurpleTitle>
+          <Title>테트라 강의</Title>
+          <Content>
+            테트라에 대해
+            <br />
+            전문적으로 공부해 보아요!
+          </Content>
+        </LectureDescription>
+      </LectureDescriptionContainer>
+      <PhoneImage
         src={"/images/lecturePhone.png"}
         alt="lecturePhone"
         width={489}
         height={869}
       />
-      <LectureImage
-        src={"/images/blackboard.png"}
-        alt="blackboard"
-        width={541}
-        height={541}
-      />
+      <SideImageContainer>
+        <SideImage
+          src={"/images/blackboard.png"}
+          alt="blackboard"
+          width={541}
+          height={541}
+        />
+      </SideImageContainer>
     </LectureWrapper>
   );
 };
@@ -40,6 +44,7 @@ const Content = styled.div`
   font-size: 36px;
   color: #1a1f27;
   margin-top: 6px;
+  line-height: 54px;
 `;
 
 const Title = styled.div`
@@ -56,7 +61,14 @@ const LectureDescription = styled.div`
   margin-bottom: 435px;
 `;
 
-const LectureImage = styled.img`
+const PhoneImage = styled.img`
+  object-fit: contain;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+const SideImage = styled.img`
   object-fit: contain;
   z-index: 1;
 `;
@@ -66,9 +78,21 @@ const LectureWrapper = styled.div`
   width: 100%;
   height: 967px;
   background-color: #ffffff;
-  display: inline-flex;
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-between;
   align-items: flex-end;
+`;
+
+const SideImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 1;
+`;
+
+const LectureDescriptionContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 1;
 `;
 
 export default Lecture;
