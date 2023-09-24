@@ -97,7 +97,6 @@ const PhoneImage = styled.img`
   z-index: 1;
   margin-left: auto;
   margin-right: auto;
-
   width: 489px;
   height: 869px;
 

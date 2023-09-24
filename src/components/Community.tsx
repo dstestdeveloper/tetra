@@ -6,19 +6,9 @@ const Community: React.FC = () => {
     <CommunityWrapper>
       <GrayCircle />
       <SideImageContainer>
-        <SideImage
-          src={"/images/heart.png"}
-          alt="heart"
-          width={553}
-          height={553}
-        />
+        <SideImage src={"/images/heart.png"} alt="heart" />
       </SideImageContainer>
-      <PhoneImage
-        src={"/images/quizPhone.png"}
-        alt="quizPhone"
-        width={489}
-        height={869}
-      />
+      <PhoneImage src={"/images/quizPhone.png"} alt="quizPhone" />
       <CommunityDescriptionContainer>
         <CommunityDescription>
           <PurpleTitle>02</PurpleTitle>
@@ -43,12 +33,21 @@ const GrayCircle = styled.div`
   width: 845px;
   height: 845px;
   z-index: 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const PurpleTitle = styled.div`
   font-weight: 700;
   font-size: 30px;
   color: #813ff2;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    margin-top: 140px;
+  }
 `;
 
 const Content = styled.div`
@@ -57,6 +56,11 @@ const Content = styled.div`
   color: #1a1f27;
   margin-top: 6px;
   line-height: 54px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 `;
 
 const Title = styled.div`
@@ -64,6 +68,10 @@ const Title = styled.div`
   font-size: 50px;
   color: #1a1f27;
   margin-top: 8px;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
 `;
 
 const CommunityDescription = styled.div`
@@ -71,6 +79,12 @@ const CommunityDescription = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 435px;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+  }
 `;
 
 const PhoneImage = styled.img`
@@ -78,11 +92,25 @@ const PhoneImage = styled.img`
   z-index: 1;
   margin-left: auto;
   margin-right: auto;
+  width: 489px;
+  height: 869px;
+
+  @media (max-width: 768px) {
+    width: 280px;
+    height: 373px;
+  }
 `;
 
 const SideImage = styled.img`
   object-fit: contain;
   z-index: 1;
+  width: 553px;
+  height: 553px;
+
+  @media (max-width: 768px) {
+    width: 203;
+    height: 203px;
+  }
 `;
 
 const CommunityWrapper = styled.div`
@@ -93,6 +121,13 @@ const CommunityWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  @media (max-width: 768px) {
+    height: 812px;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 `;
 
 const SideImageContainer = styled.div`
