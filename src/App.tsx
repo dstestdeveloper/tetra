@@ -1,5 +1,6 @@
 import Community from "./components/Community";
 import Consulting from "./components/Consulting";
+import Outro from "./components/Outro";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Lecture from "./components/Lecture";
@@ -16,6 +17,7 @@ function App() {
   //커뮤니티부분 회색원 + 그 쪽 style문제
   //강의부분 회색원 + 그 쪽 style문제
   //상담부분 회색원 + 그 쪽 style문제
+  //outro 원 추가해야함
 
   return (
     <>
@@ -26,6 +28,7 @@ function App() {
       <Community />
       <Lecture />
       <Consulting />
+      <Outro />
       <div style={{ height: "200px" }}></div>
     </>
   );
