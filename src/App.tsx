@@ -9,17 +9,16 @@ import SelfCoaching from "./components/SelfCoaching";
 import Footer from "./components/Footer";
 
 function App() {
-  //질문
-  //셀프코칭쪽 스마일 이미지 합쳐줄 수 있는지
-
   //TODO
   //모바일버전 남음
+  //pc애니메이션 추가
   //font적용
   //quiz부분 회색원
   //커뮤니티부분 회색원
   //강의부분 회색원
   //상담부분 회색원
   //outro 원 추가해야함
+  // 모달 2개
 
   return (
     <>

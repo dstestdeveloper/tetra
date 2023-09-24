@@ -52,7 +52,11 @@ const Title = styled.div`
 
 const RightContent = styled.div``;
 
-const LeftContent = styled.div``;
+const LeftContent = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 const SelfCoachingImage = styled.img`
   object-fit: contain;
