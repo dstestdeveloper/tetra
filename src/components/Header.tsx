@@ -2,6 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const Header: React.FC = () => {
+  const handleAndroidClick = () => {
+    window.location.href =
+      "https://play.google.com/store/search?q=%ED%85%8C%ED%8A%B8%EB%9D%BC%EC%85%80%ED%94%84%EC%BD%94%EC%B9%AD&c=apps&hl=ko-KR";
+  };
+  const handleIosClick = () => {
+    window.location.href =
+      "https://apps.apple.com/kr/app/tetra-self-coaching-%ED%85%8C%ED%8A%B8%EB%9D%BC-%EC%85%80%ED%94%84%EC%BD%94%EC%B9%AD/id1669817203";
+  };
   return (
     <HeaderWrapper>
       <LeftContent>
@@ -9,11 +17,11 @@ const Header: React.FC = () => {
         셀프코칭
       </LeftContent>
       <RightContent>
-        <div>
+        <div onClick={handleAndroidClick}>
           <OsImage src={"/images/android.png"} alt="android" />
           Android 앱 다운로드
         </div>
-        <div>
+        <div onClick={handleIosClick}>
           <OsImage src={"/images/ios.png"} alt="ios" />
           iOS 앱 다운로드
         </div>
@@ -42,6 +50,7 @@ const RightContent = styled.div`
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    cursor: pointer;
   }
 `;
 
