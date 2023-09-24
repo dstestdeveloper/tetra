@@ -21,21 +21,22 @@ const Intro: React.FC = () => {
         height={182}
       />
       <Title>테트라 셀프코칭</Title>
-      <Content>테트라 셀프코칭에서 지금 바로 자신을 찾아보아요!</Content>
+      <WebContent>테트라 셀프코칭에서 지금 바로 자신을 찾아보아요!</WebContent>
+      <MobileContent>
+        테트라 셀프코칭에서
+        <br />
+        지금 바로 자신을 찾아보아요!
+      </MobileContent>
       <Download>
         <IntroImage
           onClick={handleAndroidClick}
           src="/images/googleplay_w.png"
           alt="googleplay"
-          width={260}
-          height={84}
         />
         <IntroImage
           onClick={handleIosClick}
           src="/images/appstore_w.png"
           alt="appstore"
-          width={260}
-          height={84}
         />
       </Download>
     </IntroWrapper>
@@ -54,13 +55,37 @@ const Download = styled.div`
   img {
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    gap: 8px;
+    display: inline-flex;
+    justify-content: center;
+  }
 `;
 
-const Content = styled.div`
+const WebContent = styled.div`
+  display: none;
   font-weight: 400;
   font-size: 36px;
   color: #ffffff;
   margin-top: 22px;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+`;
+
+const MobileContent = styled.div`
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 22px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 
 const Title = styled.div`
@@ -68,10 +93,21 @@ const Title = styled.div`
   font-size: 50px;
   color: #ffffff;
   margin-top: 38px;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 
 const IntroImage = styled.img`
   object-fit: contain;
+  width: 260px;
+  height: 84px;
+
+  @media (max-width: 768px) {
+    width: 160px;
+    height: 56px;
+  }
 `;
 
 const IntroWrapper = styled.div`
@@ -85,6 +121,10 @@ const IntroWrapper = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    height: 745px;
+  }
 `;
 
 export default Intro;
