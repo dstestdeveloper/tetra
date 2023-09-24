@@ -43,7 +43,7 @@ const Outro: React.FC = () => {
 };
 
 const Plus = styled.div`
-  margin-top: 338px;
+  margin-top: 179px;
 `;
 
 const Download = styled.div`
