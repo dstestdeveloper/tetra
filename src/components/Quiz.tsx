@@ -36,8 +36,8 @@ const Quiz: React.FC = () => {
 
 const GrayCircle = styled.div`
   position: absolute;
-  bottom: -298.75px;
-  right: 114px;
+  bottom: -30%;
+  right: 10%;
   background-color: #f9f9f9;
   border-radius: 50%;
   width: 845px;
