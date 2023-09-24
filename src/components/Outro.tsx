@@ -12,25 +12,30 @@ const Outro: React.FC = () => {
   };
 
   return (
-    <IntroWrapper>
+    <OutroWrapper>
       <Plus />
-      <IntroImage
+      <PlusImage
         src={"/images/plus2.png"}
         alt="plus"
         width={488}
         height={306}
       />
       <Title>테트라 셀프코칭</Title>
-      <Content>테트라 셀프코칭에서 지금 바로 자신을 찾아보아요!</Content>
+      <WebContent>테트라 셀프코칭에서 지금 바로 자신을 찾아보아요!</WebContent>
+      <MobileContent>
+        테트라 셀프코칭에서
+        <br />
+        지금 바로 자신을 찾아보아요!
+      </MobileContent>
       <Download>
-        <IntroImage
+        <OutroImage
           onClick={handleAndroidClick}
           src="/images/googleplay_b.png"
           alt="googleplay"
           width={260}
           height={84}
         />
-        <IntroImage
+        <OutroImage
           onClick={handleIosClick}
           src="/images/appstore_b.png"
           alt="appstore"
@@ -38,7 +43,7 @@ const Outro: React.FC = () => {
           height={84}
         />
       </Download>
-    </IntroWrapper>
+    </OutroWrapper>
   );
 };
 
@@ -54,13 +59,37 @@ const Download = styled.div`
   img {
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    gap: 8px;
+    display: inline-flex;
+    justify-content: center;
+  }
 `;
 
-const Content = styled.div`
+const WebContent = styled.div`
+  display: none;
   font-weight: 400;
   font-size: 36px;
-  color: #1a1f27;
+  color: #ffffff;
   margin-top: 22px;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+`;
+
+const MobileContent = styled.div`
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 22px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 
 const Title = styled.div`
@@ -68,19 +97,41 @@ const Title = styled.div`
   font-size: 50px;
   color: #1a1f27;
   margin-top: 38px;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 
-const IntroImage = styled.img`
+const PlusImage = styled.img`
   object-fit: contain;
+
+  @media (max-width: 768px) {
+    width: 243px;
+    height: 152px;
+  }
 `;
 
-const IntroWrapper = styled.div`
+const OutroImage = styled.img`
+  object-fit: contain;
+
+  @media (max-width: 768px) {
+    width: 160px;
+    height: 56px;
+  }
+`;
+
+const OutroWrapper = styled.div`
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: 967px;
   background-color: #ffffff;
+
+  @media (max-width: 768px) {
+    height: 745px;
+  }
 `;
 
 export default Outro;
