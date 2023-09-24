@@ -17,18 +17,53 @@ const Header: React.FC = () => {
         셀프코칭
       </LeftContent>
       <RightContent>
-        <div onClick={handleAndroidClick}>
+        <AndroidContent onClick={handleAndroidClick}>
           <OsImage src={"/images/android.png"} alt="android" />
-          Android 앱 다운로드
-        </div>
-        <div onClick={handleIosClick}>
+          <WebContent>Android 앱 다운로드</WebContent>
+        </AndroidContent>
+        <IosContent onClick={handleIosClick}>
           <OsImage src={"/images/ios.png"} alt="ios" />
-          iOS 앱 다운로드
-        </div>
+          <WebContent>iOS 앱 다운로드</WebContent>
+        </IosContent>
       </RightContent>
     </HeaderWrapper>
   );
 };
+
+const AndroidContent = styled.div`
+  background-color: #1a1f27;
+  border-radius: 50px;
+  padding: 9px 19px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 9.5px 9.5px 9.5px 11.5px;
+  }
+`;
+const IosContent = styled.div`
+  background-color: #1a1f27;
+  border-radius: 50px;
+  padding: 9px 19px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 8.5px 10.5px 10.5px 10.5px;
+  }
+`;
+
+const WebContent = styled.div`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+`;
 
 const OsImage = styled.img`
   object-fit: contain;
@@ -43,14 +78,8 @@ const RightContent = styled.div`
   display: inline-flex;
   gap: 10px;
 
-  div {
-    background-color: #1a1f27;
-    border-radius: 50px;
-    padding: 9px 19px;
-    display: inline-flex;
-    align-items: center;
+  @media (max-width: 768px) {
     gap: 6px;
-    cursor: pointer;
   }
 `;
 
@@ -64,6 +93,14 @@ const LeftContent = styled.div`
     font-size: 36px;
     color: #813ff2;
   }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+
+    span {
+      font-size: 20px;
+    }
+  }
 `;
 
 const HeaderWrapper = styled.div`
@@ -73,6 +110,12 @@ const HeaderWrapper = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    margin-left: 16px;
+    width: calc(100% - 32px);
+    justify-content: space-between;
+  }
 `;
 
 export default Header;
