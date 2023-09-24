@@ -9,6 +9,8 @@ import SelfCoaching from "./components/SelfCoaching";
 import Footer from "./components/Footer";
 
 function App() {
+  // 질문 모달에 들어갈 글 전문 달라하기 + 줄 넘김 부분 <br />붙여달라하기
+
   //TODO
   //모바일버전 남음
   //pc애니메이션 추가
@@ -18,7 +20,6 @@ function App() {
   //강의부분 회색원
   //상담부분 회색원
   //outro 원 추가해야함
-  // 모달 2개
 
   return (
     <>
