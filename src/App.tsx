@@ -6,6 +6,7 @@ import Intro from "./components/Intro";
 import Lecture from "./components/Lecture";
 import Quiz from "./components/Quiz";
 import SelfCoaching from "./components/SelfCoaching";
+import Footer from "./components/Footer";
 
 function App() {
   //질문
@@ -29,7 +30,7 @@ function App() {
       <Lecture />
       <Consulting />
       <Outro />
-      <div style={{ height: "200px" }}></div>
+      <Footer />
     </>
   );
 }
