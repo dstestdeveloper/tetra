@@ -108,7 +108,7 @@ const SideImage = styled.img`
   height: 553px;
 
   @media (max-width: 768px) {
-    width: 203;
+    width: 203px;
     height: 203px;
   }
 `;

@@ -105,8 +105,8 @@ const PhoneImage = styled.img`
 const SideImage = styled.img`
   object-fit: contain;
   z-index: 1;
-  width: 541;
-  height: 541;
+  width: 541px;
+  height: 541px;
 
   @media (max-width: 768px) {
     width: 189px;
