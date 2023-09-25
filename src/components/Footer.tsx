@@ -17,7 +17,12 @@ const Footer: React.FC = () => {
           >
             개인정보 처리약관
           </PersonalInfo>
-          <Service onClick={() => setServiceModal(true)}>
+          <Service
+            onClick={() => {
+              setServiceModal(true);
+              document.body.style.overflow = "hidden";
+            }}
+          >
             서비스 이용약관
           </Service>
         </ButtonWrapper>
@@ -102,7 +107,10 @@ const Footer: React.FC = () => {
               alt="Close"
               width={29}
               height={29}
-              onClick={() => setServiceModal(false)}
+              onClick={() => {
+                setServiceModal(false);
+                document.body.style.overflow = "auto";
+              }}
             />
             <ModalContent>
               서비스 이용약관 (상품, 서비스 등 이용 일반 회원용) 제1조(목적) 본
@@ -161,11 +169,17 @@ const ModalContent = styled.div`
   font-size: 16px;
   line-height: 22px;
   color: #696a6f;
+  overflow-y: auto;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
 
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 18px 18px;
     width: calc(100% - 30px);
+    height: 100%;
   }
 `;
 
