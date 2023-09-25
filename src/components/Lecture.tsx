@@ -19,10 +19,21 @@ const Lecture: React.FC = () => {
       <SideImageContainer>
         <SideImage src={"/images/blackboard.png"} alt="blackboard" />
       </SideImageContainer>
-      <GrayCircle />
+      <GrayCircleContainer>
+        <GrayCircle />
+      </GrayCircleContainer>
     </LectureWrapper>
   );
 };
+
+const GrayCircleContainer = styled.div`
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+`;
 
 const GrayCircle = styled.div`
   position: absolute;

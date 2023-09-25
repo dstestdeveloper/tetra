@@ -4,7 +4,9 @@ import styled from "styled-components";
 const Community: React.FC = () => {
   return (
     <CommunityWrapper>
-      <GrayCircle />
+      <GrayCircleContainer>
+        <GrayCircle />
+      </GrayCircleContainer>
       <SideImageContainer>
         <SideImage src={"/images/heart.png"} alt="heart" />
       </SideImageContainer>
@@ -23,6 +25,15 @@ const Community: React.FC = () => {
     </CommunityWrapper>
   );
 };
+
+const GrayCircleContainer = styled.div`
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+`;
 
 const GrayCircle = styled.div`
   position: absolute;

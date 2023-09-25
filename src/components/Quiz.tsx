@@ -24,10 +24,21 @@ const Quiz: React.FC = () => {
       <SideImageContainer>
         <SideImage src={"/images/graduationCap.png"} alt="graduationCap" />
       </SideImageContainer>
-      <GrayCircle />
+      <GrayCircleContainer>
+        <GrayCircle />
+      </GrayCircleContainer>
     </QuizWrapper>
   );
 };
+
+const GrayCircleContainer = styled.div`
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+`;
 
 const GrayCircle = styled.div`
   position: absolute;

@@ -4,7 +4,9 @@ import styled from "styled-components";
 const Consulting: React.FC = () => {
   return (
     <ConsultingWrapper>
-      <GrayCircle />
+      <GrayCircleContainer>
+        <GrayCircle />
+      </GrayCircleContainer>
       <SideImageContainer>
         <SideImage src={"/images/coffee.png"} alt="coffee" />
       </SideImageContainer>
@@ -24,6 +26,15 @@ const Consulting: React.FC = () => {
     </ConsultingWrapper>
   );
 };
+
+const GrayCircleContainer = styled.div`
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+`;
 
 const GrayCircle = styled.div`
   position: absolute;
