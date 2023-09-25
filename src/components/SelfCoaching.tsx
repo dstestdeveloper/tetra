@@ -5,7 +5,7 @@ const SelfCoaching: React.FC = () => {
   return (
     <SelfCoachingWrapper>
       <LeftContent>
-        <PurpleTitle>start!</PurpleTitle>
+        <PurpleTitle>START!</PurpleTitle>
         <Title>셀프코칭 시작하기</Title>
         <Content>
           나 자신이 정확히
