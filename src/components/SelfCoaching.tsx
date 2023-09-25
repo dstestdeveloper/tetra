@@ -43,6 +43,7 @@ const Content = styled.div`
   font-size: 36px;
   color: #1a1f27;
   margin-top: 27px;
+  text-align: center;
 
   @media (max-width: 768px) {
     font-size: 16px;
