@@ -207,6 +207,7 @@ const TetraRights = styled.div`
 
   @media (max-width: 768px) {
     margin-top: 15px;
+    margin-bottom: 70px;
     font-size: 12px;
   }
 `;
@@ -278,6 +279,7 @@ const ButtonWrapper = styled.div`
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 48px;
     margin-bottom: 27px;
   }
 `;
@@ -306,6 +308,7 @@ const FooterWrapper = styled.div`
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    height: 390px;
   }
 `;
 
