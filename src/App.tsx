@@ -9,14 +9,11 @@ import SelfCoaching from "./components/SelfCoaching";
 import Footer from "./components/Footer";
 
 function App() {
-  // 질문 모달에 들어갈 글 전문 달라하기 + 줄 넘김 부분 <br />붙여달라하기
-
   // TODO
   // 모바일 퀴즈, 커뮤니티, 강의, 상담, 배치 다시
-  //  modal 모바일버전 남음
   // pc애니메이션 추가
   // font적용
-  // 모달 들어갈 문구 받아서 적용
+  // 헤더 따라 내려오도록
 
   return (
     <>
