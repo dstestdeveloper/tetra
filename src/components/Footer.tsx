@@ -237,6 +237,7 @@ const PhoneContent = styled.div`
   }
 
   @media (max-width: 768px) {
+    gap: 20px;
     div {
       font-size: 12px;
     }
