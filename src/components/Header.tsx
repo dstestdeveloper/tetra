@@ -72,6 +72,7 @@ const OsImage = styled.img`
 `;
 
 const RightContent = styled.div`
+  font-family: Pretendard, sans-serif;
   font-weight: 700;
   font-size: 20px;
   color: #ffffff;
@@ -84,11 +85,13 @@ const RightContent = styled.div`
 `;
 
 const LeftContent = styled.div`
+  font-family: Pretendard, sans-serif;
   font-weight: 400;
   font-size: 36px;
   color: #000000;
 
   span {
+    font-family: Pretendard, sans-serif;
     font-weight: 700;
     font-size: 36px;
     color: #813ff2;

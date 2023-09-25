@@ -748,6 +748,7 @@ const ModalContent = styled.div`
   padding: 40px 43px;
   width: calc(100% - 112px);
   height: calc(100% - 300px);
+  font-family: Pretendard, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -774,6 +775,7 @@ const CloseImage = styled.img`
 `;
 
 const ModalTitle = styled.div`
+  font-family: Pretendard, sans-serif;
   font-weight: 700;
   font-size: 36px;
   color: #1a1f27;
@@ -824,6 +826,7 @@ const ModalWrapper = styled.div`
 `;
 
 const TetraRights = styled.div`
+  font-family: Pretendard, sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
@@ -836,6 +839,7 @@ const TetraRights = styled.div`
 `;
 
 const TetraTitle = styled.div`
+  font-family: Pretendard, sans-serif;
   font-weight: 700;
   font-size: 24px;
   color: #ffffff;
@@ -851,10 +855,12 @@ const PhoneContent = styled.div`
   align-items: center;
   justify-content: space-between;
   div {
+    font-family: Pretendard, sans-serif;
     font-weight: 400;
     font-size: 14px;
   }
   p {
+    font-family: Pretendard, sans-serif;
     font-weight: 700;
     font-size: 14px;
   }
@@ -876,6 +882,7 @@ const PhoneWrapper = styled.div`
 `;
 
 const Service = styled.div`
+  font-family: Pretendard, sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #ffffff;
@@ -886,6 +893,7 @@ const Service = styled.div`
 `;
 
 const PersonalInfo = styled.div`
+  font-family: Pretendard, sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: #f2e8f9;

@@ -45,6 +45,7 @@ const GrayCircle = styled.div`
 `;
 
 const PurpleTitle = styled.div`
+  font-family: Pretendard, sans-serif;
   font-weight: 700;
   font-size: 30px;
   color: #813ff2;
@@ -56,6 +57,7 @@ const PurpleTitle = styled.div`
 `;
 
 const Content = styled.div`
+  font-family: Pretendard, sans-serif;
   font-weight: 400;
   font-size: 36px;
   color: #1a1f27;
@@ -69,6 +71,7 @@ const Content = styled.div`
 `;
 
 const Title = styled.div`
+  font-family: Pretendard, sans-serif;
   font-weight: 700;
   font-size: 50px;
   color: #1a1f27;

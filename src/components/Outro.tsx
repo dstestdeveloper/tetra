@@ -69,6 +69,7 @@ const Download = styled.div`
 
 const WebContent = styled.div`
   display: none;
+  font-family: Pretendard, sans-serif;
   font-weight: 400;
   font-size: 36px;
   color: #ffffff;
@@ -81,6 +82,7 @@ const WebContent = styled.div`
 
 const MobileContent = styled.div`
   display: block;
+  font-family: Pretendard, sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #ffffff;
@@ -93,6 +95,7 @@ const MobileContent = styled.div`
 `;
 
 const Title = styled.div`
+  font-family: Pretendard, sans-serif;
   font-weight: 700;
   font-size: 50px;
   color: #1a1f27;
