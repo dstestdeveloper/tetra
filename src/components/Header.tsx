@@ -117,13 +117,13 @@ const HeaderWrapper = styled.div`
   justify-content: space-around;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 6;
 
   @media (max-width: 768px) {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 6;
   }
 `;
 

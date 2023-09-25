@@ -768,7 +768,7 @@ const ModalBackground = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 5;
+  z-index: 7;
 
   @media (max-width: 768px) {
     width: 100vw;
@@ -784,7 +784,7 @@ const ModalWrapper = styled.div`
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  z-index: 6;
+  z-index: 8;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
