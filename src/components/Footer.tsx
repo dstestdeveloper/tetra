@@ -9,7 +9,12 @@ const Footer: React.FC = () => {
     <FooterWrapper>
       <LeftContent>
         <ButtonWrapper>
-          <PersonalInfo onClick={() => setPersonalModal(true)}>
+          <PersonalInfo
+            onClick={() => {
+              setPersonalModal(true);
+              document.body.style.overflow = "hidden";
+            }}
+          >
             개인정보 처리약관
           </PersonalInfo>
           <Service onClick={() => setServiceModal(true)}>
@@ -44,7 +49,10 @@ const Footer: React.FC = () => {
               alt="Close"
               width={29}
               height={29}
-              onClick={() => setPersonalModal(false)}
+              onClick={() => {
+                setPersonalModal(false);
+                document.body.style.overflow = "auto";
+              }}
             />
             <ModalContent>
               개인정보처리방침 제1조(목적) 카네스블랙(이하 ‘회사'라고 함)는
@@ -153,6 +161,12 @@ const ModalContent = styled.div`
   font-size: 16px;
   line-height: 22px;
   color: #696a6f;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 18px 18px;
+    width: calc(100% - 30px);
+  }
 `;
 
 const CloseImage = styled.img`
@@ -171,6 +185,12 @@ const ModalTitle = styled.div`
   justify-content: center;
   margin-top: 63px;
   margin-bottom: 39px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    margin-top: 22px;
+    margin-bottom: 21px;
+  }
 `;
 
 const ModalBackground = styled.div`
@@ -198,6 +218,12 @@ const ModalWrapper = styled.div`
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+    width: 80%;
+    height: 90%;
+  }
 `;
 
 const TetraRights = styled.div`
