@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* fade-in 애니메이션 적용 */
+.fade-in {
+  animation: fadeIn 1.5s forwards; /* 지속 시간을 1s로 변경 */
+}
+
+/* fade-out 애니메이션 적용 */
+.fade-out {
+  animation: fadeOut 1.5s forwards; /* 지속 시간을 1s로 변경 */
+}
