@@ -44,9 +44,11 @@ const Content = styled.div`
   color: #1a1f27;
   margin-top: 27px;
   text-align: center;
+  line-height: 54px;
 
   @media (max-width: 768px) {
     font-size: 16px;
+    line-height: 26px;
   }
 `;
 
