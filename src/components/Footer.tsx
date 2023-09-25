@@ -204,12 +204,21 @@ const TetraRights = styled.div`
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
+
+  @media (max-width: 768px) {
+    margin-top: 15px;
+    font-size: 12px;
+  }
 `;
 
 const TetraTitle = styled.div`
   font-weight: 700;
   font-size: 24px;
   color: #ffffff;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const PhoneContent = styled.div`
@@ -225,6 +234,15 @@ const PhoneContent = styled.div`
     font-weight: 700;
     font-size: 14px;
   }
+
+  @media (max-width: 768px) {
+    div {
+      font-size: 12px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
 `;
 
 const PhoneWrapper = styled.div`
@@ -236,17 +254,32 @@ const Service = styled.div`
   font-weight: 400;
   font-size: 16px;
   color: #ffffff;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const PersonalInfo = styled.div`
   font-weight: 700;
   font-size: 16px;
   color: #f2e8f9;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const ButtonWrapper = styled.div`
   display: inline-flex;
   gap: 21px;
+
+  @media (max-width: 768px) {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 27px;
+  }
 `;
 
 const LeftContent = styled.div`
@@ -268,6 +301,12 @@ const FooterWrapper = styled.div`
   background-color: #1a1f27;
   display: inline-flex;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export default Footer;
