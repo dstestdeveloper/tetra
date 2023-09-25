@@ -10,15 +10,13 @@ import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import "./App.css";
+import Modal from "./components/Modal";
 
 function App() {
-  // TODO
-  // 모바일 퀴즈, 커뮤니티, 강의, 상담, 배치 다시
-  // font적용
-  // 헤더 따라 내려오도록
-
   const [activeSection, setActiveSection] = useState(0);
   const [sectionPositions, setSectionPositions] = useState<number[]>([]);
+  const [personalModal, setPersonalModal] = useState<boolean>(false);
+  const [serviceModal, setServiceModal] = useState<boolean>(false);
 
   useEffect(() => {
     const sections = document.querySelectorAll<HTMLElement>(".section");
@@ -106,7 +104,16 @@ function App() {
       </MobileOnly>
 
       <Outro />
-      <Footer />
+      <Footer
+        setPersonalModal={setPersonalModal}
+        setServiceModal={setServiceModal}
+      />
+      <Modal
+        personalModal={personalModal}
+        setPersonalModal={setPersonalModal}
+        serviceModal={serviceModal}
+        setServiceModal={setServiceModal}
+      />
     </>
   );
 }

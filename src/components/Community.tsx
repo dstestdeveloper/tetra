@@ -35,7 +35,9 @@ const GrayCircle = styled.div`
   z-index: 0;
 
   @media (max-width: 768px) {
-    display: none;
+    /* display: none; */
+    bottom: -45%;
+    right: -57%;
   }
 `;
 
@@ -100,7 +102,12 @@ const PhoneImage = styled.img`
 
   @media (max-width: 768px) {
     width: 280px;
-    height: 373px;
+    height: 500px;
+
+    order: 2; // 순서를 2로 설정
+    z-index: 1;
+    position: relative;
+    top: -50px;
   }
 `;
 
@@ -113,6 +120,8 @@ const SideImage = styled.img`
   @media (max-width: 768px) {
     width: 203px;
     height: 203px;
+    position: relative;
+    z-index: 2;
   }
 `;
 
@@ -128,8 +137,9 @@ const CommunityWrapper = styled.div`
   @media (max-width: 768px) {
     height: 812px;
     display: inline-flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
+    z-index: 2;
   }
 `;
 
@@ -137,6 +147,10 @@ const SideImageContainer = styled.div`
   display: flex;
   justify-content: center;
   flex: 1;
+
+  @media (max-width: 768px) {
+    order: 1;
+  }
 `;
 
 const CommunityDescriptionContainer = styled.div`

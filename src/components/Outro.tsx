@@ -134,6 +134,8 @@ const OutroWrapper = styled.div`
 
   @media (max-width: 768px) {
     height: 745px;
+    z-index: 3;
+    position: relative;
   }
 `;
 

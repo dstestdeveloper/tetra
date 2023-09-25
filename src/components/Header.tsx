@@ -81,6 +81,7 @@ const RightContent = styled.div`
 
   @media (max-width: 768px) {
     gap: 6px;
+    margin-right: 13px;
   }
 `;
 
@@ -99,6 +100,7 @@ const LeftContent = styled.div`
 
   @media (max-width: 768px) {
     font-size: 20px;
+    margin-left: 16px;
 
     span {
       font-size: 20px;
@@ -113,11 +115,15 @@ const HeaderWrapper = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 
   @media (max-width: 768px) {
-    margin-left: 16px;
-    width: calc(100% - 32px);
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
   }
 `;
 
