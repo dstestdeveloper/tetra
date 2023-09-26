@@ -10,7 +10,7 @@ const Community: React.FC = () => {
       <SideImageContainer>
         <SideImage src={"/images/heart.png"} alt="heart" />
       </SideImageContainer>
-      <PhoneImage src={"/images/quizPhone.png"} alt="quizPhone" />
+      <PhoneImage src={"/images/communityPhone.png"} alt="communityPhone" />
       <CommunityDescriptionContainer>
         <CommunityDescription>
           <PurpleTitle>02</PurpleTitle>

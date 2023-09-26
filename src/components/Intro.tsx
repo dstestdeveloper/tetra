@@ -129,7 +129,7 @@ const IntroWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 1193px;
-  background-color: #ffffff;
+  background-color: #1a1f27;
   background-image: url("/images/mainbanner.png");
   background-size: cover;
   background-position: center;
