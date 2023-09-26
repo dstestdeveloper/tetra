@@ -30,20 +30,18 @@ const Footer: React.FC<FooterProps> = (props) => {
             서비스 이용약관
           </Service>
         </ButtonWrapper>
-        <PhoneWrapper>
-          <PhoneContent>
-            <div>사업자등록번호</div>
-            <p>123-12-123456</p>
-          </PhoneContent>
-          <PhoneContent>
-            <div>통신판매업신고</div>
-            <p>123-강남-123456</p>
-          </PhoneContent>
-          <PhoneContent>
-            <div>문의전화</div>
-            <p>070-0000-0000</p>
-          </PhoneContent>
-        </PhoneWrapper>
+        <PhoneW>
+          <PhoneWrapper>
+            <PhoneContent w={400}>사업자등록번호</PhoneContent>
+            <PhoneContent w={400}>통신판매업신고</PhoneContent>
+            <PhoneContent w={400}>문의전화</PhoneContent>
+          </PhoneWrapper>
+          <PhoneWrapper>
+            <PhoneContent w={700}>123-12-123456</PhoneContent>
+            <PhoneContent w={700}>123-강남-123456</PhoneContent>
+            <PhoneContent w={700}>070-0000-0000</PhoneContent>
+          </PhoneWrapper>
+        </PhoneW>
       </LeftContent>
       <RightContent>
         <TetraTitle>테트라 셀프코칭</TetraTitle>
@@ -80,38 +78,38 @@ const TetraTitle = styled.div`
   }
 `;
 
-const PhoneContent = styled.div`
+const PhoneContent = styled.div<{ w?: number }>`
   color: #ffffff;
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  div {
-    font-family: Pretendard, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-  }
-  p {
-    font-family: Pretendard, sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-  }
+  justify-content: start;
+
+  font-family: Pretendard, sans-serif;
+
+  font-weight: ${(p) => p.w};
+  font-size: 14px;
+  line-height: 40px;
 
   @media (max-width: 768px) {
     gap: 50px;
-    div {
-      font-size: 12px;
-      //line-height: 30px;
-    }
-    p {
-      font-size: 12px;
-      //line-height: 30px;
-    }
+    font-size: 12px;
+    line-height: 30px;
   }
+`;
+
+const PhoneW = styled.div`
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
 `;
 
 const PhoneWrapper = styled.div`
   display: inline-flex;
   flex-direction: column;
+  align-items: start;
+  justify-content: center;
 `;
 
 const Service = styled.div`
