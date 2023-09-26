@@ -41,6 +41,9 @@ const Intro: React.FC = () => {
 
 const Plus = styled.div`
   margin-top: 338px;
+  @media (max-width: 768px) {
+    margin-top: 0px;
+  }
 `;
 
 const Download = styled.div`
@@ -117,15 +120,6 @@ const PlusImage = styled.img`
   }
 `;
 
-// const PlusImage = styled.div`
-//   background-image: url("/images/plus.png");
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   width: 184px;
-//   height: 182px;
-// `;
-
 const IntroImage = styled.img`
   object-fit: contain;
   width: 260px;
@@ -151,6 +145,7 @@ const IntroWrapper = styled.div`
 
   @media (max-width: 768px) {
     height: 790px;
+    justify-content: center;
   }
 `;
 
