@@ -60,7 +60,7 @@ const TetraRights = styled.div`
   color: #ffffff;
 
   @media (max-width: 768px) {
-    margin-bottom: 70px;
+    margin-bottom: 42px;
     font-size: 12px;
     line-height: 40px;
   }

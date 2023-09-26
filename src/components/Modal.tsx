@@ -710,7 +710,7 @@ const ModalContent = styled.div`
   border-radius: 15px;
   padding: 40px 43px;
   width: calc(100% - 112px);
-  height: calc(100% - 300px);
+  height: calc(100% - 256px);
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;

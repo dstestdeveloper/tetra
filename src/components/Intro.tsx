@@ -14,7 +14,8 @@ const Intro: React.FC = () => {
   return (
     <IntroWrapper>
       <Plus />
-      <PlusImage src={"/images/plus.png"} alt="plus" width={184} height={182} />
+      <PlusImage src={"/images/plus.png"} alt="plus" />
+      {/* <PlusImage /> */}
       <Title>테트라 셀프코칭</Title>
       <WebContent>테트라 셀프코칭에서 지금 바로 자신을 찾아보아요!</WebContent>
       <MobileContent>
@@ -105,12 +106,25 @@ const Title = styled.div`
 
 const PlusImage = styled.img`
   object-fit: contain;
+  width: 184px;
+  height: 182px;
+  transform: scale(1.2);
 
   @media (max-width: 768px) {
     width: 123px;
     height: 123px;
+    transform: scale(1.3);
   }
 `;
+
+// const PlusImage = styled.div`
+//   background-image: url("/images/plus.png");
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   width: 184px;
+//   height: 182px;
+// `;
 
 const IntroImage = styled.img`
   object-fit: contain;

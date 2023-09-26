@@ -13,10 +13,7 @@ import "./App.css";
 import Modal from "./components/Modal";
 
 //1. 모바일 인트로 화면 가운데
-//2. 모바일 / pc + 이미지 꽉차게
-//4. pc 모달 아래여백
 //6. 푸터 조정
-//7. 모바일 / pc 푸터 아래여백
 
 function App() {
   const [activeSection, setActiveSection] = useState(0);
