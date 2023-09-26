@@ -64,6 +64,7 @@ const Download = styled.div`
     gap: 8px;
     display: inline-flex;
     justify-content: center;
+    margin-top: 20px;
   }
 `;
 
@@ -72,8 +73,9 @@ const WebContent = styled.div`
   font-family: Pretendard, sans-serif;
   font-weight: 400;
   font-size: 36px;
-  color: #ffffff;
+  color: #1a1f27;
   margin-top: 22px;
+  line-height: 44px;
 
   @media (min-width: 768px) {
     display: block;
@@ -84,10 +86,11 @@ const MobileContent = styled.div`
   display: block;
   font-family: Pretendard, sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  color: #ffffff;
-  margin-top: 22px;
+  color: #1a1f27;
   text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 5.5px;
 
   @media (min-width: 768px) {
     display: none;
@@ -100,9 +103,12 @@ const Title = styled.div`
   font-size: 50px;
   color: #1a1f27;
   margin-top: 38px;
+  line-height: 61px;
 
   @media (max-width: 768px) {
     font-size: 30px;
+    line-height: 39px;
+    margin-top: 16px;
   }
 `;
 

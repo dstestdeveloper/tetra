@@ -60,9 +60,9 @@ const TetraRights = styled.div`
   color: #ffffff;
 
   @media (max-width: 768px) {
-    margin-top: 15px;
     margin-bottom: 70px;
     font-size: 12px;
+    line-height: 40px;
   }
 `;
 
@@ -71,9 +71,12 @@ const TetraTitle = styled.div`
   font-weight: 700;
   font-size: 24px;
   color: #ffffff;
+  line-height: 29px;
 
   @media (max-width: 768px) {
     font-size: 20px;
+    line-height: 24px;
+    margin-top: 38px;
   }
 `;
 
@@ -94,12 +97,14 @@ const PhoneContent = styled.div`
   }
 
   @media (max-width: 768px) {
-    gap: 20px;
+    gap: 50px;
     div {
       font-size: 12px;
+      //line-height: 30px;
     }
     p {
       font-size: 12px;
+      //line-height: 30px;
     }
   }
 `;
@@ -155,6 +160,9 @@ const RightContent = styled.div`
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 const FooterWrapper = styled.div`

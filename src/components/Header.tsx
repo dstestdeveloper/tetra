@@ -118,8 +118,10 @@ const HeaderWrapper = styled.div`
   position: sticky;
   top: 0;
   z-index: 6;
+  border-bottom: #dddddd 1px solid;
 
   @media (max-width: 768px) {
+    height: 67px;
     justify-content: space-between;
     position: sticky;
     top: 0;

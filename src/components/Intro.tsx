@@ -55,6 +55,7 @@ const Download = styled.div`
     gap: 8px;
     display: inline-flex;
     justify-content: center;
+    margin-top: 27px;
   }
 `;
 
@@ -65,6 +66,7 @@ const WebContent = styled.div`
   font-size: 36px;
   color: #ffffff;
   margin-top: 22px;
+  line-height: 44px;
 
   @media (min-width: 768px) {
     display: block;
@@ -76,8 +78,9 @@ const MobileContent = styled.div`
   font-family: Pretendard, sans-serif;
   font-weight: 400;
   font-size: 18px;
+  line-height: 22px;
   color: #ffffff;
-  margin-top: 22px;
+  margin-top: 6px;
   text-align: center;
 
   @media (min-width: 768px) {
@@ -91,9 +94,12 @@ const Title = styled.div`
   font-size: 50px;
   color: #ffffff;
   margin-top: 38px;
+  line-height: 61px;
 
   @media (max-width: 768px) {
-    font-size: 30px;
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 24px;
   }
 `;
 
@@ -130,7 +136,7 @@ const IntroWrapper = styled.div`
   background-repeat: no-repeat;
 
   @media (max-width: 768px) {
-    height: 745px;
+    height: 790px;
   }
 `;
 

@@ -739,6 +739,13 @@ const CloseImage = styled.img`
   top: 28px;
   right: 28px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 const ModalTitle = styled.div`
@@ -782,7 +789,7 @@ const ModalWrapper = styled.div`
   height: calc(100% - 256px);
   padding: 20px;
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   z-index: 8;
   display: inline-flex;

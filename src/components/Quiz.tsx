@@ -62,17 +62,19 @@ const PurpleTitle = styled.div`
   font-weight: 700;
   font-size: 30px;
   color: #813ff2;
+  line-height: 36px;
 
   @media (max-width: 768px) {
     font-size: 16px;
     margin-top: 140px;
+    line-height: 19px;
   }
 `;
 
 const Content = styled.div`
   font-family: Pretendard, sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 30px;
   color: #1a1f27;
   margin-top: 6px;
   line-height: 54px;
@@ -80,6 +82,7 @@ const Content = styled.div`
   @media (max-width: 768px) {
     font-size: 16px;
     line-height: 26px;
+    margin-top: 10px;
   }
 `;
 
@@ -89,9 +92,12 @@ const Title = styled.div`
   font-size: 50px;
   color: #1a1f27;
   margin-top: 8px;
+  line-height: 61px;
 
   @media (max-width: 768px) {
     font-size: 32px;
+    line-height: 39px;
+    margin-top: 10px;
   }
 `;
 
