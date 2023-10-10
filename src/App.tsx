@@ -12,9 +12,6 @@ import styled from "styled-components";
 import "./App.css";
 import Modal from "./components/Modal";
 
-//1. 모바일 인트로 화면 가운데
-//6. 푸터 조정
-
 function App() {
   const [activeSection, setActiveSection] = useState(0);
   const [sectionPositions, setSectionPositions] = useState<number[]>([]);
