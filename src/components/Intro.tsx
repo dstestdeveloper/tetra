@@ -15,7 +15,6 @@ const Intro: React.FC = () => {
     <IntroWrapper>
       <Plus />
       <PlusImage src={"/images/plus.png"} alt="plus" />
-      {/* <PlusImage /> */}
       <Title>테트라 셀프코칭</Title>
       <WebContent>테트라 셀프코칭에서 지금 바로 자신을 찾아보아요!</WebContent>
       <MobileContent>
